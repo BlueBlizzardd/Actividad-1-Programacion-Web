@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"
+        integrity="sha256-2Pmvv0kuTBOenSvLm6bvfBSSHrUJ+3A7x6P5Ebd07/g=" crossorigin="anonymous">
+        </script>
+    <script src="assets/js/script.js" defer></script>
+</head>
+
+<body>
+    <h2>Calculos de empleados</h2>
+
+    <form action="" method="post" class="form">
+        <label for="fname">First name:</label>
+        <input type="text" id="fname" name="fname">
+
+        <label for="lname">Last name:</label>
+        <input type="text" id="lname" name="lname">
+
+        <label for="age">Age:</label>
+        <input type="text" name="age" id="age">
+
+        <label for="marital">Marital Status:</label>
+        <select name="marital" id="marital">
+            <option value="single">Single</option>
+            <option value="married">Married</option>
+            <option value="widowed">Widowed</option>
+        </select>
+
+        <input type="radio" id="male" name="gender" class="gender" value="male">
+        <label for="male">Male</label>
+        <input type="radio" id="female" name="gender" class="gender" value="female">
+        <label for="female">Female</label>
+
+        <label for="salary">Salary:</label>
+        <input type="number" name="salary" id="salary">
+
+        <button type="button" value="Submit" class="submit" onsubmit="return false">Submit</button>
+        <button type="reset" value="Reset">Reset</button>
+    </form>
+    <div class="resp"></div>
+    <hr>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+                <th>Marital Status</th>
+                <th>Gender</th>
+                <th>Salary</th>
+            </tr>
+        </thead>
+        <tbody id="responseTable"></tbody>
+    </table>
+    <div id="results"></div>
+</body>
+
+</html>
